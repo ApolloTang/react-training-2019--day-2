@@ -12,9 +12,7 @@ jest.mock('../my-module') // use auto mock for simple case
 //
 // *****************************************************
 
-describe('This will not work', ()=>{ // eslint-disable-line
   test('mockFunction has been called with correct text', () => {
     myModuleConsumer()
     expect(myModule).toHaveBeenCalledWith('it has been called in consumer')
   })
-})
