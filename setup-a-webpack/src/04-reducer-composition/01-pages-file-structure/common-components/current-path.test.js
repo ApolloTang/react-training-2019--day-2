@@ -7,7 +7,7 @@ import { createMemoryHistory } from 'history'
 import { CurrentPath } from './current-path'
 
 describe('[CurrentPath component]', () => {
-  it('can show current path', async () => {
+  it('can show current path', async () => { // eslint-disable-line
     const history = createMemoryHistory()
     const {
       findByText
