@@ -29,7 +29,7 @@ const MyApp = () => {
 
 it('[Existence assertion async]', async () => {
   const {
-    findByText, // <--- this one is async it wait
+    findByText, // <--- this one is async, it wait for 5000ms by default
     queryByText,
     container, debug
   } = render(<MyApp />)
