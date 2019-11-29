@@ -8,8 +8,8 @@ const CancelButton = () => (
 
 test('cancel button exist', ()=>{
   const {getByText} = render(<CancelButton/>)
-  getByText(/cancel/i)
-  //        ^^^^^^^^^
+  expect(getByText(/cancel/i)).toBeTruthy()
+  //               ^^^^^^^^^
   // alway try to use case insensitive regex to query you things
   // in dom
 })
