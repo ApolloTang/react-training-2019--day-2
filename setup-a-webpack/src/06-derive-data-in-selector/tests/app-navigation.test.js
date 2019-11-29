@@ -103,4 +103,3 @@ function renderWithStoreAndRouter(_history, _store){
     )
   }
 }
-
