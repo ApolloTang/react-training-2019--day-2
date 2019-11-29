@@ -8,7 +8,9 @@ const mapAppStateToProps = appState => {
   //   todos: [{}, {}, {}, ...]
   // }
   const todos = appState.todos
-  return { todos }
+  return { 
+    todos 
+  }
 }
 
 
