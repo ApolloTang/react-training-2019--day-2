@@ -26,7 +26,7 @@ describe('[Using getByLabelText with form]', ()=>{
   })
 
 
-  it('can find first name\'s input by label text', ()=>{
+  it('can find first name\'s input by label text', ()=>{ // eslint-disable-line
     const input_firstName = getByLabelText(/first name/i)
     debug(input_firstName)
     /*
@@ -38,7 +38,7 @@ describe('[Using getByLabelText with form]', ()=>{
   })
 
 
-  it('can find last name\'s input by label text', ()=>{
+  it('can find last name\'s input by label text', ()=>{ // eslint-disable-line
     const input_lastName = getByLabelText(/last name/i)
     debug(input_lastName)
     /*
