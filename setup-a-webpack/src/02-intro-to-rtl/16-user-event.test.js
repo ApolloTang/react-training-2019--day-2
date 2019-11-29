@@ -26,7 +26,7 @@ const MyForm = () => {
 }
 
 
-test('event can type into form', ()=>{
+test('event can type into form', ()=>{ // eslint-disable-line
   const {
     getByLabelText,
   } = render(<MyForm/>)
