@@ -4,7 +4,7 @@ import {render} from '@testing-library/react'
 // **************************************************
 //
 // cannot use getByText because we don't know in
-// advance the text will be, so we use text-id
+// advance the text will be, so we use test-id
 //
 // **************************************************
 
