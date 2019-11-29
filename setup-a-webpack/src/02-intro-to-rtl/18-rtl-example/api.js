@@ -2,6 +2,7 @@ const api = {
   subscription: async (data) => {
     let message
 
+    await new Promise(rs=>setTimeout(rs, 1000))
     try {
       const rand = Math.random()
       if (rand > .5) {
