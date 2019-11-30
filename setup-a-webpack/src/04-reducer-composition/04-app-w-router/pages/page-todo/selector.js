@@ -27,5 +27,4 @@ const mapDispatchToProps = dispatch => (
 export {
   mapAppStateToProps,
   mapDispatchToProps,
-  makeNewTodo
 }

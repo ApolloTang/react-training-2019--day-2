@@ -2,7 +2,6 @@ import { actions } from './action'
 import { makeNewTodo } from './model'
 
 
-
 const mapAppStateToProps = appState => {
   // appState = {
   //   todos: [{}, {}, {}, ...]
@@ -31,5 +30,4 @@ const mapDispatchToProps = dispatch => (
 export {
   mapAppStateToProps,
   mapDispatchToProps,
-  makeNewTodo
 }

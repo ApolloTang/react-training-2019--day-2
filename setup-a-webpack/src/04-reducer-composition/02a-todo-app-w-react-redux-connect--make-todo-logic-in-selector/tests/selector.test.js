@@ -5,7 +5,6 @@ import fakeConfigureStore from 'redux-mock-store'
 import {
   mapAppStateToProps,
   mapDispatchToProps,
-  makeNewTodo
 } from  '../selector'
 
 import { actions, actionNames } from '../action'
@@ -34,7 +33,7 @@ describe('[Selector, mapDispatchToProps]', ()=>{
     const { dispatch_addTodo } = mapDispatchToProps(fakeDispatch)
 
     const newTodoText = 'learn React'
-    
+
     const expectedNewTodo = {
       id: expect.any(String),
       text: newTodoText,
@@ -105,7 +104,7 @@ describe('[Selector, mapDipatchToProps (integration test on action creator)]', (
 
   describe('dispatch_addTodo() can dispatch action creator: actions.todos_add()', () => {
     const newTodoText = 'learn React'
-    
+
     const expectedNewTodo = {
       id: expect.any(String),
       text: newTodoText,
@@ -201,13 +200,3 @@ describe('[Selector, mapDipatchToProps (integration test on action creator)]', (
 
 
 
-describe('makeNewTodo', ()=>{
-  it('can create time stamp', ()=>{
-    const timeBefore = Date.now()
-    const todoObj = makeNewTodo('learn react')
-    const timeAfter = Date.now()
-
-    expect(timeBefore).toBeLessThanOrEqual(todoObj.timeStamp)
-    expect(timeAfter).toBeGreaterThanOrEqual(todoObj.timeStamp)
-  })
-})
